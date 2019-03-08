@@ -1,0 +1,16 @@
+INSERT series (id, name) VALUES (1, N'International');
+INSERT series (id, name) VALUES (2, N'International Series');
+INSERT series (id, name) VALUES (3, N'Masters');
+INSERT series (id, name) VALUES (4, N'Grand Slam');
+INSERT series (id, name) VALUES (5, N'International Gold');
+INSERT series (id, name) VALUES (6, N'ATP250');
+INSERT series (id, name) VALUES (7, N'ATP500');
+INSERT series (id, name) VALUES (8, N'Masters 1000');
+INSERT series (id, name) VALUES (9, N'Masters Cup');
+INSERT series (id, name) VALUES (10, N'Premier');
+INSERT series (id, name) VALUES (11, N'SEC');
+INSERT series (id, name) VALUES (12, N'1');
+INSERT series (id, name) VALUES (13, N'3');
+INSERT series (id, name) VALUES (14, N'2');
+INSERT series (id, name) VALUES (15, N'4');
+INSERT series (id, name) VALUES (16, N'Elite Trophy');

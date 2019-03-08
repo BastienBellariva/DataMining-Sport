@@ -1,0 +1,16 @@
+INSERT comment_match (id_comment_match, libelle_comment_match) VALUES (1, N'Completed');
+INSERT comment_match (id_comment_match, libelle_comment_match) VALUES (2, N'Retired');
+INSERT comment_match (id_comment_match, libelle_comment_match) VALUES (3, N'Walkover');
+INSERT comment_match (id_comment_match, libelle_comment_match) VALUES (4, N'Full Time');
+INSERT comment_match (id_comment_match, libelle_comment_match) VALUES (5, N'Compleed');
+INSERT comment_match (id_comment_match, libelle_comment_match) VALUES (6, N'Disqualified');
+INSERT comment_match (id_comment_match, libelle_comment_match) VALUES (7, N'Retied');
+INSERT comment_match (id_comment_match, libelle_comment_match) VALUES (8, N'Sched');
+INSERT comment_match (id_comment_match, libelle_comment_match) VALUES (9, N'R_Bag');
+INSERT comment_match (id_comment_match, libelle_comment_match) VALUES (10, N'Walover');
+INSERT comment_match (id_comment_match, libelle_comment_match) VALUES (11, N'NSY');
+INSERT comment_match (id_comment_match, libelle_comment_match) VALUES (12, N'Fin');
+INSERT comment_match (id_comment_match, libelle_comment_match) VALUES (13, N'Reired');
+INSERT comment_match (id_comment_match, libelle_comment_match) VALUES (14, N'R_V');
+INSERT comment_match (id_comment_match, libelle_comment_match) VALUES (15, N'R_P');
+INSERT comment_match (id_comment_match, libelle_comment_match) VALUES (16, N'R_Mo');
