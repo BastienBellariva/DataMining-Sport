@@ -1,3 +1,4 @@
+USE d_tennis;
 INSERT series (id_serie, libelle_serie) VALUES (1, N'International');
 INSERT series (id_serie, libelle_serie) VALUES (2, N'International Series');
 INSERT series (id_serie, libelle_serie) VALUES (3, N'Masters');

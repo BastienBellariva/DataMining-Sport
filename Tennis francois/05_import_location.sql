@@ -1,3 +1,4 @@
+USE d_tennis;
 INSERT location (id_location, libelle_localisation) VALUES (1, N'Houston');
 INSERT location (id_location, libelle_localisation) VALUES (2, N'Estoril');
 INSERT location (id_location, libelle_localisation) VALUES (3, N'Rome');

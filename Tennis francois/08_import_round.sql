@@ -1,3 +1,4 @@
+USE d_tennis;
 INSERT round (id_round, libelle_round) VALUES (1, N'2nd Round');
 INSERT round (id_round, libelle_round) VALUES (2, N'1st Round');
 INSERT round (id_round, libelle_round) VALUES (3, N'3rd Round');

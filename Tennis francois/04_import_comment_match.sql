@@ -1,3 +1,4 @@
+USE d_tennis;
 INSERT comment_match (id_comment_match, libelle_comment_match) VALUES (1, N'Completed');
 INSERT comment_match (id_comment_match, libelle_comment_match) VALUES (2, N'Retired');
 INSERT comment_match (id_comment_match, libelle_comment_match) VALUES (3, N'Walkover');

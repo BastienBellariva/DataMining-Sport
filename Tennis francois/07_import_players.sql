@@ -1,3 +1,4 @@
+USE d_tennis;
 INSERT players (id_player, name_player, genre_player) VALUES (1, N'Haas T.', 1);
 INSERT players (id_player, name_player, genre_player) VALUES (2, N'Gaudio G.', 1);
 INSERT players (id_player, name_player, genre_player) VALUES (3, N'Sanguinetti D.', 1);

@@ -1,3 +1,4 @@
+USE d_tennis;
 INSERT surface (id_surface, libelle_surface) VALUES (1, N'Clay');
 INSERT surface (id_surface, libelle_surface) VALUES (2, N'Grass');
 INSERT surface (id_surface, libelle_surface) VALUES (3, N'Hard');

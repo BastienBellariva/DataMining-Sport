@@ -1,3 +1,5 @@
+USE d_tennis;
+
 CREATE TABLE comment_match(
 	id_comment_match int NOT NULL AUTO_INCREMENT,
 	libelle_comment_match varchar(50) NULL,

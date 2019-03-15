@@ -1,3 +1,4 @@
+USE d_tennis;
 INSERT tournament (id_tournament, libelle_tournament, type_genre) VALUES (1, N'U.S. Men''s Clay Court Championships', NULL);
 INSERT tournament (id_tournament, libelle_tournament, type_genre) VALUES (2, N'Estoril Open', NULL);
 INSERT tournament (id_tournament, libelle_tournament, type_genre) VALUES (3, N'Telecom Italia Masters Roma', NULL);
