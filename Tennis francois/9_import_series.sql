@@ -1,0 +1,16 @@
+INSERT series (id_serie, libelle_serie) VALUES (1, N'International');
+INSERT series (id_serie, libelle_serie) VALUES (2, N'International Series');
+INSERT series (id_serie, libelle_serie) VALUES (3, N'Masters');
+INSERT series (id_serie, libelle_serie) VALUES (4, N'Grand Slam');
+INSERT series (id_serie, libelle_serie) VALUES (5, N'International Gold');
+INSERT series (id_serie, libelle_serie) VALUES (6, N'ATP250');
+INSERT series (id_serie, libelle_serie) VALUES (7, N'ATP500');
+INSERT series (id_serie, libelle_serie) VALUES (8, N'Masters 1000');
+INSERT series (id_serie, libelle_serie) VALUES (9, N'Masters Cup');
+INSERT series (id_serie, libelle_serie) VALUES (10, N'Premier');
+INSERT series (id_serie, libelle_serie) VALUES (11, N'SEC');
+INSERT series (id_serie, libelle_serie) VALUES (12, N'1');
+INSERT series (id_serie, libelle_serie) VALUES (13, N'3');
+INSERT series (id_serie, libelle_serie) VALUES (14, N'2');
+INSERT series (id_serie, libelle_serie) VALUES (15, N'4');
+INSERT series (id_serie, libelle_serie) VALUES (16, N'Elite Trophy');
