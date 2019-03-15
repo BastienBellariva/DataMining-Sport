@@ -1,4 +1,4 @@
-USE db_nba;
+USE d_nba;
 
 CREATE TABLE stat_joueur(
     id_stat_joueur INT NOT NULL AUTO_INCREMENT,
