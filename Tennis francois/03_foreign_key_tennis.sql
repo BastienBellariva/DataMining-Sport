@@ -1,4 +1,4 @@
-USE tennis;
+USE d_tennis;
 
 ALTER TABLE match_stat ADD FOREIGN KEY(id_comment_match)
     REFERENCES comment_match (id_comment_match);
