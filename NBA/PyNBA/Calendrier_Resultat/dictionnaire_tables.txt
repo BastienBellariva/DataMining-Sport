@@ -1,0 +1,73 @@
+Fichier Results
+
+Date = Date du match
+Visitor = Nom de l'équipe à l'extérieur
+PTS_visitor = Nombre de points de l'équipe à l'extérieur
+Home = Nom de l'équipe à domicile
+PTS_home = Nombre de points de l'équipe à domicile
+OT = Nombre de prolongations (0 si vide)
+
+_____________________________________________________________
+
+Fichier team_total_stats
+
+Rk = Numéro dans le classement int(4)
+Team = Nom de l'équipe varchar(255)
+G = Nombre de matchs int(4)
+MP = Nombre de minutes jouées int(8)
+FG = Nombre de paniers marqués int(8)
+FGA = Nombre de shoots tentés int(8)
+FG% = Pourcentage de réussite au shoots float
+3P = Nombre de paniers à 3pts marqués int(8)
+3PA = Nombre de paniers à 3pts tentés int(8)
+3P% = Pourcentage de réussite à 3pts float
+2P = Nombre de paniers à 2pts marqués int(8)
+2PA = Nombre de paniers à 2pts tentés int(8)
+2P% = Pourcentage de réussite à 2pts float
+FT = Nombre de lancer-franc marqués int(8)
+FTA = Nombre de lancer-franc tentés int(8)
+FT% = Pourcentage de réussite au lancer-franc float
+ORB = Nombre de rebonds offensifs int(8)
+DRB = Nombre de rebonds défensifs int(8)
+TRB = Nombre de rebonds total int(8)
+AST = Nombre de passes décisives int(8)
+STL = Nombre d'interceptions int(8)
+BLK = Nombre de contres int(8)
+TOV = Nombre de ballons perdus int(8)
+PF = Nombre de fautes int(8)
+PTS = Nombre de points par matchs float
+
+_____________________________________________________________
+
+Fichier players_total_stats
+
+Rk = Numéro dans le classement int(4)
+Player = Nom du joueur varchar(255)
+Pos = Poste du joueur varchar(255)
+Age = Age du joueur int(4)
+Tm = Equipe du Joueur varchar(255)
+G = Nombre de matchs int(4)
+GS = Nombre de matchs en titulaire int(4)
+MP = Nombre de minutes jouées int(8)
+FG = Nombre de paniers marqués int(8)
+FGA = Nombre de shoots tentés int(8)
+FG% = Pourcentage de réussite au shoots float
+3P = Nombre de paniers à 3pts marqués int(8)
+3PA = Nombre de paniers à 3pts tentés int(8)
+3P% = Pourcentage de réussite à 3pts float
+2P = Nombre de paniers à 2pts marqués int(8)
+2PA = Nombre de paniers à 2pts tentés int(8)
+2P% = Pourcentage de réussite à 2pts float
+eFG% = Pourcentage de réussite effectif float
+FT = Nombre de lancer-franc marqués int(8)
+FTA = Nombre de lancer-franc tentés int(8)
+FT% = Pourcentage de réussite au lancer-franc float
+ORB = Nombre de rebonds offensifs int(8)
+DRB = Nombre de rebonds défensifs int(8)
+TRB = Nombre de rebonds total int(8)
+AST = Nombre de passes décisives int(8)
+STL = Nombre d'interceptions int(8)
+BLK = Nombre de contres int(8)
+TOV = Nombre de ballons perdus int(8)
+PF = Nombre de fautes int(8)
+PTS = Nombre de points par matchs float
