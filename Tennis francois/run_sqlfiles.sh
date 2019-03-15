@@ -25,7 +25,7 @@ verif=0
 
 #Lancement du script "1_create_database_tennis" : crée la base d_tennis
 if [ $verif -eq 0 ]; then
-	mysql --defaults-extra-file=$credentials </1_create_database_tennis.sql 
+	mysql --defaults-extra-file=$credentials <01_create_database_tennis.sql 
 		if [ $? -eq 0 ]; then
     			echo "La création de la base de données est terminée" 
 		else
@@ -36,7 +36,7 @@ fi
 
 #Lancement du script "2_schema_tennis" : Créer les tables de la base d_tennis
 if [ $verif -eq 0 ]; then
-	mysql --defaults-extra-file=$credentials </2_schema_tennis.sql 
+	mysql --defaults-extra-file=$credentials <02_schema_tennis.sql 
 		if [ $? -eq 0 ]; then
     			echo "La schema de la base d_tennis est crée" 
 		else
@@ -47,7 +47,7 @@ fi
 
 #Lancement du script "3_foreign_key_tennis" : Créer les tables de la base d_tennis
 if [ $verif -eq 0 ]; then
-	mysql --defaults-extra-file=$credentials </3_foreign_key_tennis.sql 
+	mysql --defaults-extra-file=$credentials <03_foreign_key_tennis.sql 
 		if [ $? -eq 0 ]; then
     			echo "Création des clés étrangères reussi" 
 		else
@@ -58,7 +58,7 @@ fi
 
 #Lancement du script "4_import_comment_match" : import des données comment_match
 if [ $verif -eq 0 ]; then
-	mysql --defaults-extra-file=$credentials </4_import_comment_match.sql 
+	mysql --defaults-extra-file=$credentials <04_import_comment_match.sql 
 		if [ $? -eq 0 ]; then
     			echo "Import des données comment_match OK" 
 		else
@@ -69,7 +69,7 @@ fi
 
 #Lancement du script "5_import_location" : import des locations
 if [ $verif -eq 0 ]; then
-	mysql --defaults-extra-file=$credentials </5_import_location.sql 
+	mysql --defaults-extra-file=$credentials <05_import_location.sql 
 		if [ $? -eq 0 ]; then
     			echo "Import des données locations OK" 
 		else
@@ -80,7 +80,7 @@ fi
 
 #Lancement du script "6_import_match" : import des données matchs
 if [ $verif -eq 0 ]; then
-	mysql --defaults-extra-file=$credentials </6_import_match.sql 
+	mysql --defaults-extra-file=$credentials <06_import_match.sql 
 		if [ $? -eq 0 ]; then
     			echo "Import des données match OK" 
 		else
@@ -91,7 +91,7 @@ fi
 
 #Lancement du script "7_import_players" : import des données players
 if [ $verif -eq 0 ]; then
-	mysql --defaults-extra-file=$credentials </7_import_players.sql 
+	mysql --defaults-extra-file=$credentials <07_import_players.sql 
 		if [ $? -eq 0 ]; then
     			echo "Import des données players OK" 
 		else
@@ -102,7 +102,7 @@ fi
 
 #Lancement du script "8_import_round" : import des données round
 if [ $verif -eq 0 ]; then
-	mysql --defaults-extra-file=$credentials </8_import_round.sql 
+	mysql --defaults-extra-file=$credentials <08_import_round.sql 
 		if [ $? -eq 0 ]; then
     			echo "Import des données round OK" 
 		else
@@ -113,7 +113,7 @@ fi
 
 #Lancement du script "9_import_series" : import des données series
 if [ $verif -eq 0 ]; then
-	mysql --defaults-extra-file=$credentials </9_import_series.sql 
+	mysql --defaults-extra-file=$credentials <09_import_series.sql 
 		if [ $? -eq 0 ]; then
     			echo "Import des données series OK" 
 		else
@@ -124,7 +124,7 @@ fi
 
 #Lancement du script "10_import_surface" : import des données surface
 if [ $verif -eq 0 ]; then
-	mysql --defaults-extra-file=$credentials </10_import_surface.sql 
+	mysql --defaults-extra-file=$credentials <10_import_surface.sql 
 		if [ $? -eq 0 ]; then
     			echo "Import des données surface OK" 
 		else
@@ -135,7 +135,7 @@ fi
 
 #Lancement du script "11_import_tournament" : import des données tournament
 if [ $verif -eq 0 ]; then
-	mysql --defaults-extra-file=$credentials </11_import_tournament.sql 
+	mysql --defaults-extra-file=$credentials <11_import_tournament.sql 
 		if [ $? -eq 0 ]; then
     			echo "Import des données tournament OK" 
 		else
