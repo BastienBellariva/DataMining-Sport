@@ -8,5 +8,5 @@ CREATE TABLE match_nba(
     points_domicile INT NOT NULL,
     points_visiteur INT NOT NULL,
     prolongation BOOLEAN NOT NULL,
- 	PRIMARY KEY (id_comment_match) 
+ 	PRIMARY KEY (id_match_nba) 
 );
