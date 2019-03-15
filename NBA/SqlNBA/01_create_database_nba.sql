@@ -1,0 +1,5 @@
+DROP DATABASE IF EXISTS d_nba;
+
+CREATE DATABASE d_nba;
+
+USE d_nba;

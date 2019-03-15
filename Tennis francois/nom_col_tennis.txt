@@ -30,3 +30,6 @@ MaxW =  maximum odds  du gagnant?
 MaxL =  maximum odds  du perdant?
 AvgW = moyenne odd du gagnant?
 AvgL = moyenne odd du gagnant?
+
+Cannot add or update a child row: 
+a foreign key constraint fails (`d_tennis`.`match_stat`, CONSTRAINT `match_stat_ibfk_3` FOREIGN KEY (`id_looser`) REFERENCES `players` (`id_player`))
