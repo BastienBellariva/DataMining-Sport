@@ -78,17 +78,6 @@ if [ $verif -eq 0 ]; then
 		fi
 fi
 
-#Lancement du script "6_import_match" : import des données matchs
-if [ $verif -eq 0 ]; then
-	mysql --defaults-extra-file=$credentials <06_import_match.sql 
-		if [ $? -eq 0 ]; then
-    			echo "Import des données match OK" 
-		else
-			echo "[Error] Import des données match"
-			verif=1
-		fi
-fi
-
 #Lancement du script "7_import_players" : import des données players
 if [ $verif -eq 0 ]; then
 	mysql --defaults-extra-file=$credentials <07_import_players.sql 
@@ -140,6 +129,17 @@ if [ $verif -eq 0 ]; then
     			echo "Import des données tournament OK" 
 		else
 			echo "[Error] Import des données tournament"
+			verif=1
+		fi
+fi
+
+#Lancement du script "12_import_match" : import des données matchs
+if [ $verif -eq 0 ]; then
+	mysql --defaults-extra-file=$credentials <12_import_match.sql 
+		if [ $? -eq 0 ]; then
+    			echo "Import des données match OK" 
+		else
+			echo "[Error] Import des données match"
 			verif=1
 		fi
 fi
