@@ -27,9 +27,75 @@ verif=0
 if [ $verif -eq 0 ]; then
 	mysql --defaults-extra-file=$credentials <01_create_database_nba.sql 
 		if [ $? -eq 0 ]; then
-    			echo "La création de la base de données est terminée" 
+    			echo "Creation base de données OK" 
 		else
 			echo "[Error] Création de la base de données"
+			verif=1
+		fi
+fi
+
+#Lancement du script "02_create_table_match_nba" : crée la base d_nba
+if [ $verif -eq 0 ]; then
+	mysql --defaults-extra-file=$credentials <02_create_table_match_nba.sql 
+		if [ $? -eq 0 ]; then
+    			echo "Creation table match_nba OK" 
+		else
+			echo "[Error] Création table match_nba "
+			verif=1
+		fi
+fi
+
+#Lancement du script "03_create_table_equipe" : crée la base d_nba
+if [ $verif -eq 0 ]; then
+	mysql --defaults-extra-file=$credentials <03_create_table_equipe.sql 
+		if [ $? -eq 0 ]; then
+    			echo "Creation table equipe OK" 
+		else
+			echo "[Error] Création table equipe"
+			verif=1
+		fi
+fi
+
+#Lancement du script "04_create_table_saison" : crée la base d_nba
+if [ $verif -eq 0 ]; then
+	mysql --defaults-extra-file=$credentials <04_create_table_saison.sql 
+		if [ $? -eq 0 ]; then
+    			echo "Creation table saison OK" 
+		else
+			echo "[Error] Création table saison"
+			verif=1
+		fi
+fi
+
+#Lancement du script "05_create_table_stat_equipe" : crée la base d_nba
+if [ $verif -eq 0 ]; then
+	mysql --defaults-extra-file=$credentials <05_create_table_stat_equipe.sql 
+		if [ $? -eq 0 ]; then
+    			echo "Creation table stat_equipe OK" 
+		else
+			echo "[Error] Création table stat_equipe"
+			verif=1
+		fi
+fi
+
+#Lancement du script "06_create_table_joueur" : crée la base d_nba
+if [ $verif -eq 0 ]; then
+	mysql --defaults-extra-file=$credentials <06_create_table_joueur.sql 
+		if [ $? -eq 0 ]; then
+    			echo "Creation table joueur OK" 
+		else
+			echo "[Error] Création table joueur"
+			verif=1
+		fi
+fi
+
+#Lancement du script "07_create_table_stat_joueur" : crée la base d_nba
+if [ $verif -eq 0 ]; then
+	mysql --defaults-extra-file=$credentials <07_create_table_stat_joueur.sql 
+		if [ $? -eq 0 ]; then
+    			echo "Creation table stat_joueur OK" 
+		else
+			echo "[Error] Création table stat_joueur"
 			verif=1
 		fi
 fi
