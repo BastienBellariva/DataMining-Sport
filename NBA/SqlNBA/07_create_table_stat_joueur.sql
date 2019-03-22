@@ -2,7 +2,7 @@ USE d_nba;
 
 CREATE TABLE stat_joueur(
     id_stat_joueur INT NOT NULL AUTO_INCREMENT,
-    id_joueur INT NOT NULL,
+    id_joueur VARCHAR(30) NOT NULL,
     id_saison INT NOT NULL,
     id_equipe INT NOT NULL,
     classement_joueur INT(4),
