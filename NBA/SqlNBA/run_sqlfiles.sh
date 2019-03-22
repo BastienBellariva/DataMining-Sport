@@ -99,3 +99,14 @@ if [ $verif -eq 0 ]; then
 			verif=1
 		fi
 fi
+
+#Lancement du script "08_create_foreign_keys" : crée les clés étrangères
+if [ $verif -eq 0 ]; then
+	mysql --defaults-extra-file=$credentials <08_create_foreign_keys.sql 
+		if [ $? -eq 0 ]; then
+    			echo "Creation foreign keys OK" 
+		else
+			echo "[Error] Création foreign keys"
+			verif=1
+		fi
+fi
