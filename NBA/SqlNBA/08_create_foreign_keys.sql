@@ -1,3 +1,5 @@
+USE d_nba;
+
 -- Foreign keys table match_nba
 ALTER TABLE match_nba ADD FOREIGN KEY(id_equipe_domicile)
     REFERENCES equipe(id_equipe);
