@@ -39,4 +39,42 @@ class FormatData:
         }
         return switcher.get(letters, "Invalid month")
 
+    def formatTeamLibelle(self, abrev):
+        switcher = {
+            'PHO': 'Phoenix Suns',
+            'GWS': 'Golden State Warriors',
+            'LAL': 'Los Angeles Lakers',
+            'NYK': 'New York Knicks',
+            'IND': 'Indiana Pacers',
+            'DEN': 'Denver Nuggets',
+            'UTA': 'Utah Jazz',
+            'CHI': 'Chicago Bulls',
+            'DAL': 'Dallas Mavericks',
+            'ORL': 'Orlando Magic',
+            'BOS': 'Boston Celtics',
+            'SAC': 'Sacramento Kings',
+            'CLE': 'Cleveland Cavaliers',
+            'POR': 'Portland Trail Blazers',
+            'MIL': 'Milwaukee Bucks',
+            'TOR': 'Toronto Raptors',
+            'HOU': 'Houston Rockets',
+            'MIA': 'Miami Heat',
+            'ATL': 'Atlanta Hawks',
+            'NJN': 'New Jersey Nets',
+            'MIN': 'Minnesota Timberwolves',
+            'PHI': 'Philadelphia 76ers',
+            'SAS': 'San Antonio Spurs',
+            'OKC': 'Oklahoma City Thunder',
+            'WAS': 'Washington Wizards',
+            'NOH': 'New Orleans Hornets',
+            'LAC': 'Los Angeles Clippers',
+            'DET': 'Detroit Pistons',
+            'MEM': 'Memphis Grizzlies',
+            'CHA': 'Charlotte Bobcats',
+            'BRK': 'Brooklyn Nets',
+            'NOP': 'New Orleans Pelicans',
+            'CHO': 'Charlotte Hornets'
+        }
+        return switcher.get(abrev, "TOT")
+
 

@@ -1,9 +1,10 @@
 import csv
 
 from Import_Data import ConnectDB as ConnectDBFile
+from Import_Data import FormatData as FormatDataFile
 
 
-class ImportTeamStat:
+class ImportPlayerStat:
 
     conn = None
     cursor = None
@@ -20,12 +21,12 @@ class ImportTeamStat:
         self.all_seasons = self.cursor.fetchall()
         print(self.all_seasons)
 
-    def scrollFilesForTeamStatAndImport(self):
+    def scrollFilesForPlayerStatAndImport(self):
         for season in self.all_seasons:
-            csv_name = "../Calendrier_Resultat/" + season[1] + "/" + season[1] + "_team_total_stats.csv"
+            csv_name = "../Calendrier_Resultat/" + season[1] + "/" + season[1] + "_players_total_stats.csv"
             print(csv_name)
             csv_content = list(csv.reader(open(csv_name), delimiter=','))
-            self.formatAndImportTeamStat(csv_content[1:], season)
+            self.formatAndImportPlayerStat(csv_content[1:], season)
 
     def selectIdTeamWithName(self, libelle_team):
         sql = "SELECT id_equipe FROM equipe WHERE libelle_equipe LIKE %s"
@@ -41,30 +42,34 @@ class ImportTeamStat:
         season = self.cursor.fetchone()
         return season[0]
 
-    def formatAndImportTeamStat(self, one_season_team_stat, season):
-        for team_stat in one_season_team_stat:
-            print("In progress ... {}".format(team_stat))
-            id_team = self.selectIdTeamWithName(team_stat[1])
-            id_season = self.selectIdSeasonWithLibelle(season[1])
+    def formatAndImportPlayerStat(self, one_season_player_stat, season):
+        for player_stat in one_season_player_stat:
+            print("In progress ... {}".format(player_stat))
+            libelle_team = FormatDataFile.FormatData().formatTeamLibelle(player_stat[5])
 
-            print(id_team, id_season, team_stat[0], team_stat[2], team_stat[3],
-               team_stat[4], team_stat[5], float(team_stat[6]),
-               team_stat[8], team_stat[7], float(team_stat[9]),
-               team_stat[11], team_stat[10], float(team_stat[12]),
-               team_stat[14], team_stat[13], float(team_stat[15]),
-               team_stat[16], team_stat[17], team_stat[18],
-               team_stat[19], team_stat[20], team_stat[21],
-               team_stat[22], team_stat[23], team_stat[24])
+            if libelle_team != "TOT":
+                id_team = self.selectIdTeamWithName(libelle_team)
+                id_season = self.selectIdSeasonWithLibelle(season[1])
 
-            self.insertOneStat(id_team, id_season, team_stat[0], team_stat[2], team_stat[3],
-                               team_stat[4], team_stat[5], float(team_stat[6]),
-                               team_stat[8], team_stat[7], float(team_stat[9]),
-                               team_stat[11], team_stat[10], float(team_stat[12]),
-                               team_stat[14], team_stat[13], float(team_stat[15]),
-                               team_stat[16], team_stat[17], team_stat[18],
-                               team_stat[19], team_stat[20], team_stat[21],
-                               team_stat[22], team_stat[23], team_stat[24]
-                               )
+                print(player_stat[2], id_season, id_team, player_stat[0], player_stat[3], player_stat[4],
+                      player_stat[6], player_stat[7], player_stat[8],
+                      player_stat[9], player_stat[10], float(player_stat[11]),
+                      player_stat[13], player_stat[12], float(player_stat[14]),
+                      player_stat[16], player_stat[15], float(player_stat[17]),
+                      player_stat[18],
+                      player_stat[20], player_stat[19], float(player_stat[21]),
+                      player_stat[22], player_stat[23], float(player_stat[24]),
+                      )
+
+                self.insertOneStat(id_team, id_season, team_stat[0], team_stat[2], team_stat[3],
+                                   team_stat[4], team_stat[5], float(team_stat[6]),
+                                   team_stat[8], team_stat[7], float(team_stat[9]),
+                                   team_stat[11], team_stat[10], float(team_stat[12]),
+                                   team_stat[14], team_stat[13], float(team_stat[15]),
+                                   team_stat[16], team_stat[17], team_stat[18],
+                                   team_stat[19], team_stat[20], team_stat[21],
+                                   team_stat[22], team_stat[23], team_stat[24]
+                                   )
 
     def insertOneStat(self, id_team, id_season, rank, number_match, number_minuts_play,
                       number_basket, number_basket_try, percent_basket_success,

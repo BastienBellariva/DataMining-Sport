@@ -28,6 +28,7 @@ CREATE TABLE stat_joueur(
     nbr_rebond_defensif INT(8),
     nbr_rebond_total INT(8),
     nbr_passe_decisive INT(8),
+    nbr_interception INT(8),
     nbr_contre INT(8),
     nbr_ballon_perdu INT(8),
     nbr_faute INT(8),
