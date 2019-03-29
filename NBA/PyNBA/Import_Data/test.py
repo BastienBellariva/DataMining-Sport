@@ -1,13 +1,10 @@
-array_test = []
-tab = ["valeur 1", "valeur 2"]
+from Import_Data import ConnectDB as ConnectDBFile
 
-if tab not in array_test:
-    array_test.append(tab)
 
-if tab not in array_test:
-    array_test.append(tab)
+conn = ConnectDBFile.ConnectDB.getInstance()
+cursor = conn.cursor()
 
-if tab not in array_test:
-    array_test.append(tab)
+team = ".031"
 
-print(array_test)
+
+print(float(team))

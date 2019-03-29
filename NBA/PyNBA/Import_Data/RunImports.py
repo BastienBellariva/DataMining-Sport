@@ -1,4 +1,4 @@
-from Import_Data import ImportPlayers, ImportSeasons, ImportTeams
+from Import_Data import ImportPlayers, ImportSeasons, ImportTeams, ImportMatchStat, ImportTeamStat
 
 
 obj_import_season = ImportSeasons.ImportSeasons()
@@ -12,6 +12,11 @@ obj_import_teams = ImportTeams.ImportTeams()
 obj_import_teams.scrollFilesForTeams()
 obj_import_teams.importAllTeams()
 
+obj_import_match = ImportMatchStat.ImportMatchStat()
+obj_import_match.scrollFilesForMatchStatAndImport()
+
+obj_import_team_stat = ImportTeamStat.ImportTeamStat()
+obj_import_team_stat.scrollFilesForTeamStatAndImport()
 
 
 
